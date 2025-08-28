@@ -2,6 +2,7 @@ package fr.diginamic.springsecurityj2.repositories;
 
 import fr.diginamic.springsecurityj2.entity.UserApp;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
@@ -9,6 +10,7 @@ import java.util.Optional;
  * Repository interface for managing {@link UserApp} entities.
  * Extends {@link JpaRepository} to provide CRUD operations.
  */
+@Repository
 public interface UserAppRepositories extends JpaRepository<UserApp, Integer> {
 
     /**
